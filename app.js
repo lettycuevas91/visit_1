@@ -17,9 +17,9 @@ app.get('/', async (req, res, next) => {
 
   if(name === 'Anónimo'){
     const data ={
-      //date: Date.now(),
-      name: name,
-      count: 1
+      date: Date.now(),
+      name: name
+     
     }
     try {
       const visitor = new Visitor(data);
